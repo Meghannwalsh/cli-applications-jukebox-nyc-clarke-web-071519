@@ -26,4 +26,5 @@ def play
   elsif song.is_a(String)
     SONGS.each do |son|
     if son == song
+      return son
 end
