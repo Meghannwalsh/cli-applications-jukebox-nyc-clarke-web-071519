@@ -27,7 +27,7 @@ end
 
 def play(songs)
   song = gets.chomp
-  if song.is_i? && song <= songs.length
+  if song.is_i? && song.to_i <= songs.length
     return songs[song]
   elsif song.is_a(String)
     songs.each do |son|
