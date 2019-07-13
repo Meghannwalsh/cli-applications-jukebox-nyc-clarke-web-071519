@@ -54,7 +54,7 @@ def exit_jukebox
 end
 
 def run(songs)
-  puts "Please enter a command:"
+  puts "Please enter a song name or number:"
   answer = gets.chomp
   if answer == 'play'
     play(songs)
