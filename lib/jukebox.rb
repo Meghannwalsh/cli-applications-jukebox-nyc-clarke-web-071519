@@ -21,7 +21,7 @@ end
 
 def play
   song = gets.chomp
-  if song.is_a(Integer) 
+  if song.is_a(Integer)
     SONGS[song]
   elsif song.is_a(String)
     SONGS.each do |son|
