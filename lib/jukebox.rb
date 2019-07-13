@@ -22,9 +22,9 @@ end
 def play(songs)
   song = gets.chomp
   if song.is_a? Integer && song <= SONGS.length
-    return SONGS[song]
+    return songs[song]
   elsif song.is_a(String)
-    SONGS.each do |son|
+    songs.each do |son|
     if son == song
       return son
     end
