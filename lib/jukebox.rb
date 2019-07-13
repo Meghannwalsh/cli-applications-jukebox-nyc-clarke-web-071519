@@ -44,6 +44,7 @@ end
 def list(songs)
   num = 0
   songs.each do |song|
-    puts "#{num += 1}. #{song}"
+    num += 1
+    puts "#{num}. #{song}"
   end
 end
