@@ -31,7 +31,6 @@ def play
   end
 else
   puts "/Invalid input, please try again/"
-end 
 end
 
 end
