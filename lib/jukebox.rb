@@ -27,4 +27,9 @@ def play
     SONGS.each do |son|
     if son == song
       return son
+    end
+  end
+else raise
+end 
+
 end
