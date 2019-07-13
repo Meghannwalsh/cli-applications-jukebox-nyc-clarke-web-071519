@@ -20,17 +20,16 @@ def help
 end
 
 def play
-  song = gets.chomp
-  if song.is_a(Integer) && song <= SONGS.length
-    SONGS[song]
-  elsif song.is_a(String)
-    SONGS.each do |son|
-    if son == song
-      return son
+    song = gets.chomp
+    if song.is_a(Integer) && song <= SONGS.length
+      SONGS[song]
+    elsif song.is_a(String)
+      SONGS.each do |son|
+      if son == song
+        return son
+      end
     end
+  else
+    puts "/Invalid input, please try again/"
   end
-else
-  puts "/Invalid input, please try again/"
-end
-
 end
