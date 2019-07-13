@@ -19,9 +19,15 @@ def help
 - exit : exits this program"
 end
 
+class String
+    def is_i?
+       !!(self =~ /\A[-+]?[0-9]+\z/)
+    end
+end
+
 def play(songs)
   song = gets.chomp
-  if song.is_a? Integer && song <= songs.length
+  if song.is_i? && song <= songs.length
     return songs[song]
   elsif song.is_a(String)
     songs.each do |son|
