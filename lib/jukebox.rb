@@ -56,13 +56,13 @@ end
 def run(songs)
   puts "Please enter a command:"
   answer = gets.chomp
-    if answer == play
-      play(songs)
-    elsif answer == help
-      help
-    elsif answer == list
-      list(songs)
-    else
-      exit_jukebox
-    end
+  if answer == 'play'
+    play(songs)
+  elsif answer == 'help'
+    help
+  elsif answer == 'list'
+    list(songs)
+  else
+    exit_jukebox
+  end
 end
