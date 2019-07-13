@@ -63,8 +63,7 @@ def run(songs)
       help
     elsif answer == 'list'
       list(songs)
-    elsif answer == 'exit'
-      exit_jukebox
     end
   end
+  exit_jukebox
 end
