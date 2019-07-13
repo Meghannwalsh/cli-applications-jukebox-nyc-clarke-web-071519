@@ -19,16 +19,16 @@ def help
 - exit : exits this program"
 end
 
-def play
+def play(song)
   song = gets.chomp
-    if song.is_a? Integer && song <= SONGS.length
-      return SONGS[song]
-    elsif song.is_a(String)
-      SONGS.each do |son|
-      if son == song
-        return son
-      end
+  if song.is_a? Integer && song <= SONGS.length
+    return SONGS[song]
+  elsif song.is_a(String)
+    SONGS.each do |son|
+    if son == song
+      return son
     end
+  end
   else
     puts "/Invalid input, please try again/"
   end
