@@ -32,7 +32,7 @@ def play(songs)
   elsif song.is_a(String)
     songs.each do |son|
     if son == song
-      return son
+      puts son
     end
   end
   else
