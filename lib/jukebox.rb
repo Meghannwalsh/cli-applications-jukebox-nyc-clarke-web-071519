@@ -29,6 +29,7 @@ def play(songs)
   song = gets.chomp
   if song.is_i? && song.to_i <= songs.length
     puts songs[song.to_i-1]
+    return
   else
     songs.each do |son|
     if son == song
@@ -36,7 +37,5 @@ def play(songs)
       return
     end
   end
-  else
-    puts "/Invalid input, please try again/"
-  end
+  puts "/Invalid input, please try again/"
 end
