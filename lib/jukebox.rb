@@ -28,7 +28,8 @@ end
 def play(songs)
   song = gets.chomp
   if song.is_i? && song.to_i <= songs.length
-    puts songs[song.to_i-1]
+    son = songs[song.to_i-1]
+    puts "Playing #{son}"
     return
   else
     songs.each do |son|
