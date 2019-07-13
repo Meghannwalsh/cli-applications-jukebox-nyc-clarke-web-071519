@@ -29,7 +29,7 @@ def play(songs)
   song = gets.chomp
   if song.is_i? && song.to_i <= songs.length
     puts songs[song.to_i-1]
-  elsif song.is_a?(String)
+  else
     songs.each do |son|
     if son == song
       puts son
