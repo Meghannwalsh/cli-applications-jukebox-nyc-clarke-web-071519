@@ -19,8 +19,8 @@ def help
 - exit : exits this program"
 end
 
-def play(song)
-  #song = gets.chomp
+def play(songs)
+  song = gets.chomp
   if song.is_a? Integer && song <= SONGS.length
     return SONGS[song]
   elsif song.is_a(String)
