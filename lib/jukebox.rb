@@ -33,6 +33,7 @@ def play(songs)
     songs.each do |son|
     if son == song
       puts son
+      return
     end
   end
   else
