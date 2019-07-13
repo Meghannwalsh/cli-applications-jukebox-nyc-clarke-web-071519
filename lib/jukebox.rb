@@ -20,7 +20,7 @@ def help
 end
 
 def play
-    song = gets.chomp
+  song = gets.chomp
     if song.is_a(Integer) && song <= SONGS.length
       SONGS[song]
     elsif song.is_a(String)
