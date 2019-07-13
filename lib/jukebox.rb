@@ -32,9 +32,10 @@ def play(songs)
     return
   else
     songs.each do |son|
-    if son == song
-      puts son
-      return
+      if son == song
+        puts son
+        return
+      end
     end
   end
   puts "/Invalid input, please try again/"
