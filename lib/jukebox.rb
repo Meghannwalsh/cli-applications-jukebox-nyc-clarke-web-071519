@@ -29,7 +29,8 @@ def play
       return son
     end
   end
-else raise
-end 
+else
+  puts "/Invalid input, please try again/"
+end
 
 end
