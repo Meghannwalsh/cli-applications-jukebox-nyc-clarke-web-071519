@@ -40,3 +40,7 @@ def play(songs)
   end
   puts "/Invalid input, please try again/"
 end
+
+def list
+
+end 
