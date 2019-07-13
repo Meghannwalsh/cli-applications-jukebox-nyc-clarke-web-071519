@@ -1,5 +1,5 @@
 # Add your code here
-songs = [
+SONGS = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
@@ -18,3 +18,12 @@ def help
 - play : lets you choose a song to play
 - exit : exits this program"
 end
+
+def play
+  song = gets.chomp
+  if song.is_a(Integer) 
+    SONGS[song]
+  elsif song.is_a(String)
+    SONGS.each do |son|
+    if son == song 
+end 
